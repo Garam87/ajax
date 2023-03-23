@@ -10,8 +10,8 @@
          -->
     <section>
  		<!-- index페이지로 이동함 이거 넣으면 -->   
-        <a href="${pageContext.request.contextPath}">
-            <img src="${pageContext.request.contextPath}/resources/images/Loopy.png" id="home-logo">
+        <a href="${contextPath}">
+            <img src="${contextPath}/resources/images/Loopy.png" id="home-logo">
         </a>
     </section>
 
@@ -23,7 +23,7 @@
             <form action="#">
                 <fieldset>
                     <input type="text" id="query" name="query" 
-                        placeholder="검색어를 입력해주세요.">
+                        placeholder="검색어를 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder='검색어를 입력해주세요.'">
                     
                     <!-- 검색 버튼 -->
                     <button type="submit" id="search-btn" class="fa-solid fa-magnifying-glass"></button>
