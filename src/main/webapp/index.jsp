@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>community</title>
+    <title>루피 커뮤니티</title>
 
     <link rel="stylesheet" href="resources/css/main-style.css">
 
@@ -76,7 +76,18 @@
         
                     <!-- 회원가입 / ID/PW 찾기 -->
                     <article id="signUp-find-area">
-                        <a href="#">회원가입</a>
+
+
+                        <!-- <a href="/community/WEB-INF/views/member/signUp.jsp"></a> -->
+
+                        <!-- WEB-INF 폴더는 외부로부터 직접적으로 요청할 수 없는 폴더
+                            왜? 중요한 코드(자바, sql, 설정관련)가 위치하는 폴더로서
+                                외부로부터 접근을 차단하기 위해서
+
+                                -> Servlet을 이용 내부 접근(forward)은 가능
+                        -->
+
+                        <a href="${contextPath}/member/signUp">회원가입</a>
                         <span>|</span>
                         <a href="#">ID/PW찾기</a>
                     </article>

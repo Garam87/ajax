@@ -100,7 +100,7 @@ header > section:nth-child(1){
 .search-area fieldset{
     padding : 2px;
     margin : 0;
-    border: 2px solid #455ba8;
+    border: 2px solid #FFB4BF;
     border-radius: 5px;
 
     display: flex;
@@ -130,7 +130,7 @@ header > section:nth-child(1){
 
     /* icon은 보통 특수문자 같은 문자로 취급되서 글자, 글꼴 스타일 적용 가능 */
     font-size: 1.2em;
-    color : #455ba8;
+    color : #FFB4BF;
     cursor: pointer; /* 마우스 커서 손가락 모양 */
 }
 
@@ -205,7 +205,7 @@ nav li > a{
 
 /* 메뉴에 마우스가 올라왔을 때 */
 nav li > a:hover{
-    background-color: #455ba8;
+    background-color: #FFB4BF;
     color: white;
 }
 
@@ -276,7 +276,7 @@ form[name='login-frm']{
 
 /* id, pw input 태그에 포커스가 맞춰졌을 때 */
 #id-pw-area > section:first-child > input:focus{
-    border : 2px solid #455ba8;
+    border : 2px solid #FFB4BF;
 }
 
 
@@ -296,7 +296,7 @@ form[name='login-frm']{
 }
 
 #id-pw-area > section:last-child > button:hover{
-    background-color: #455ba8;
+    background-color: #FFB4BF;
     color : white;
 }
 
