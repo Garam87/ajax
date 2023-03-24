@@ -10,6 +10,21 @@ const checkObj = {
 
 const memberEmail = document.getElementById("memberEmail");
 
+memberEmail.addEventListener("keyup", function() {
+    const regEx = /^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@(?:\w+\.)+\w+$/;
+ 
+    const result1 = document.getElementById("emailMessage");
+    if(regEx.test(this.value)) {
+		console.log("왜 안나오누")
+        result1.innerText = "유효성 형식 입니다.";
+        result1.style.color = "green";
+
+    } else {
+        result1.innerText = "잘못된 형식입니다";
+        result1.style.color = "red";        
+    }
+})
+
 
 // 인증번호 보내기
 const sendBtn = document.getElementById("sendBtn");
@@ -74,3 +89,4 @@ sendBtn.addEventListener("click", function() {
 
     }
 })
+
