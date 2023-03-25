@@ -29,7 +29,7 @@ public class SendEmailServlet extends HttpServlet {
 		
 		String subject = "[Community 프로젝트] 회원 가입 이메일 인증번호"; // 제목
 		
-		String fromEmail = "dheotjd87@gmail.com"; // 보내는 사람으로 표시될 이메일
+		
 		String fromUsername = "관리자"; // 보내는 사람 이름
 		String toEmail = inputEmail; // 받는 사람, 콤마(,)로 어려개 나열 가능
 		
