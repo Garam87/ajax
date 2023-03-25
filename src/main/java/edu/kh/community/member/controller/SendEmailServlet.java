@@ -39,8 +39,7 @@ public class SendEmailServlet extends HttpServlet {
 		// 	1) 2단계 인증추가
 		// 	2) 앱 비밀번호 생성(메일, 서버컴퓨터 os) -> 저장해두기 (bqjteunlpnnxirad)
 		
-		final String smtpEmail = "dheotjd87@gmail.com"; // 이메일
-		final String password = "bqjteunlpnnxirad"; // 발급받은 비밀번호
+		
 		
 		// 메일 옵션 설정
 		Properties props = new Properties();
